@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asphaleia AI - Solusi Pertahanan Siber Berbasis Kecerdasan Buatan</title>
+  <meta name="description" content="Asphaleia AI menyediakan layanan keamanan siber otonom berbasis AI: Autonomous SOC, deteksi zero-day, perlindungan LLM & GenAI, dan pencegahan ancaman siber enterprise 24/7.">
+  <meta property="og:title" content="Asphaleia AI - Solusi Pertahanan Siber Berbasis AI">
+  <meta property="og:description" content="Layanan proteksi siber otonom generasi baru dengan deteksi ancaman real-time bertenaga deep learning.">
+  <meta property="og:type" content="website">
+
+  <!-- External CSS Murni (Tanpa Framework) -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <!-- Logo Perusahaan -->
+      <a href="index.html" class="brand-logo" id="brand-logo">
+        <div class="brand-icon">
+          <!-- Shield AI Icon SVG -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <span>Asphaleia<span style="color: var(--accent-emerald);">.AI</span></span>
+        <span class="brand-badge">Cyber Defense</span>
+      </a>
+
+      <!-- Navigasi Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active">Beranda</a>
+        <a href="#layanan" class="nav-link">Layanan AI</a>
+        <a href="#keunggulan" class="nav-link">Keunggulan</a>
+        <a href="#tentang" class="nav-link">Tentang Kami</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+        <!-- Tautan ke Halaman Lain Proyek (Blog & CV) -->
+        <a href="blog.html" class="nav-link" style="color: var(--accent-cyan);">
+          Blog AI <span class="nav-tag-badge">Bootstrap 5</span>
+        </a>
+        <a href="cv.html" class="nav-link" style="color: var(--accent-emerald-light);">
+          CV <span class="nav-tag-badge">Tailwind 4</span>
+        </a>
+      </nav>
+
+      <!-- Nav Actions / CTA -->
+      <div class="nav-actions">
+        <a href="#kontak" class="btn btn-primary btn-sm" id="btn-nav-consult">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          Konsultasi Keamanan
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         HERO SECTION
+         ========================================================================= -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <!-- Kolom Konten -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Autonomous AI Cyber Defense Engine v4.2</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Perisai Keamanan Siber Otonom <br>
+            <span class="highlight">Bertenaga Kecerdasan Buatan</span>
+          </h1>
+
+          <p class="hero-description">
+            Asphaleia AI menghadirkan pertahanan digital proaktif untuk mendeteksi ancaman zero-day, mengamankan pipeline Large Language Model (LLM), dan mengotomasi investigasi insiden siber dalam hitungan milidetik.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#kontak" class="btn btn-primary" id="btn-hero-cta">
+              Jadwalkan Konsultasi
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#layanan" class="btn btn-secondary">
+              Eksplorasi Layanan AI
+            </a>
+          </div>
+
+          <!-- Statistik Metrik Hero -->
+          <div class="hero-stats-row">
+            <div class="hero-stat-item">
+              <span class="stat-number">99.8<span class="stat-unit">%</span></span>
+              <span class="stat-label">Akurasi Deteksi Ancaman</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-number">&lt; 45<span class="stat-unit">ms</span></span>
+              <span class="stat-label">Kecepatan Mitigasi AI</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-number">2.4<span class="stat-unit">M+</span></span>
+              <span class="stat-label">Serangan Dicegah / Hari</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kolom Visual Interactive HUD / Telemetry Card -->
+        <div class="hero-visual">
+          <div class="hero-visual-card">
+            <div class="hud-header">
+              <div class="hud-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <span>Live Cyber Telemetry Matrix</span>
+              </div>
+              <span class="hud-status-badge">SOC ACTIVE 24/7</span>
+            </div>
+
+            <!-- Terminal Real-Time Anomaly Log -->
+            <div class="hud-terminal">
+              <div class="terminal-line">
+                <span class="terminal-accent">[SYSTEM]</span>
+                <span>Neural Defense Grid: SYNCHRONIZED</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-accent">[INGEST]</span>
+                <span>48,290 network packets/sec inspected</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-success">[DETECT]</span>
+                <span>Zero-Day Injection blocked from 198.51.100.24</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-accent">[GUARD]</span>
+                <span>LLM Prompt Jailbreak neutralized (Score: 0.994)</span>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-success">[STATUS]</span>
+                <span>All enterprise perimeters 100% secure</span>
+              </div>
+            </div>
+
+            <!-- Mini Metrics Grid -->
+            <div class="hud-metrics-grid">
+              <div class="hud-metric-box">
+                <span class="val" style="color: var(--accent-emerald);">0.002%</span>
+                <span class="desc">False Positive Ratio</span>
+              </div>
+              <div class="hud-metric-box">
+                <span class="val" style="color: var(--accent-cyan);">Autonomous</span>
+                <span class="desc">Incident Quarantine Mode</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         LAYANAN AI SECTION (Minimal 3 Layanan dengan CSS Grid & Flexbox)
+         ========================================================================= -->
+    <section id="layanan" class="services-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            Katalog Layanan Unggulan
+          </span>
+          <h2>Solusi Jasa AI Cyber Security Menyeluruh</h2>
+          <p>
+            Kami menggabungkan arsitektur transformer, pembelajaran mesin berbasis graf, dan orkestrasi otonom untuk melindungi infrastruktur kritikal organisasi Anda.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Layanan 1 -->
+          <article class="service-card" id="service-soc">
+            <div class="service-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Autonomous SOC & Real-Time Triage</h3>
+            <p class="service-desc">
+              Pusat operasi keamanan otonom berbasis agen AI yang mengorelasikan ribuan alert keamanan per detik, mengeliminasi kelelahan alert, dan merespons insiden secara otomatis tanpa jeda.
+            </p>
+            <div class="service-features-list">
+              <div class="service-feature-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Pengurangan Mean Time to Detect (MTTD) 80%</span>
+              </div>
+              <div class="service-feature-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated Playbook Execution 24/7</span>
+              </div>
+            </div>
+            <a href="#kontak" class="btn btn-secondary btn-sm">Konsultasikan Layanan</a>
+          </article>
+
+          <!-- Layanan 2 -->
+          <article class="service-card" id="service-vuln">
+            <div class="service-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Predictive Vulnerability Intelligence</h3>
+            <p class="service-desc">
+              Pemindaian celah keamanan cerdas menggunakan model prediktif machine learning untuk menemukan celah zero-day pada source code, container, dan infrastruktur cloud sebelum dieksploitasi musuh.
+            </p>
+            <div class="service-features-list">
+              <div class="service-feature-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Analisis Kode AST & Deep Static Scanning</span>
+              </div>
+              <div class="service-feature-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Prioritisasi Risiko Berbasis CVSS & Threat Feed</span>
+              </div>
+            </div>
+            <a href="#kontak" class="btn btn-secondary btn-sm">Konsultasikan Layanan</a>
+          </article>
+
+          <!-- Layanan 3 -->
+          <article class="service-card" id="service-llm">
+            <div class="service-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                <path d="M12 12L2.5 7.5"></path>
+                <path d="M12 12v9"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">GenAI & LLM Security Firewall</h3>
+            <p class="service-desc">
+              Firewall semantik dan layer guardrails yang dirancang khusus untuk memproteksi aplikasi Generative AI dari serangan Prompt Injection, Jailbreak, data poisoning, serta kebocoran data rahasia.
+            </p>
+            <div class="service-features-list">
+              <div class="service-feature-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Filter Prompt Injeksi & Indirect Hijacking</span>
+              </div>
+              <div class="service-feature-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Proteksi Kebocoran PII & Data Enterprise</span>
+              </div>
+            </div>
+            <a href="#kontak" class="btn btn-secondary btn-sm">Konsultasikan Layanan</a>
+          </article>
+
+          <!-- Layanan 4 -->
+          <article class="service-card" id="service-anomaly">
+            <div class="service-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Behavioral Anomaly & Anti-Insider</h3>
+            <p class="service-desc">
+              User and Entity Behavior Analytics (UEBA) cerdas yang mendeteksi penyalahgunaan kredensial akun, exfiltrasi data abnormal, dan ancaman orang dalam (insider threat) melalui analisis pola kontinu.
+            </p>
+            <div class="service-features-list">
+              <div class="service-feature-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Pemodelan Profil Perilaku Tanpa Mengganggu Privasi</span>
+              </div>
+              <div class="service-feature-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Deteksi Pengambilalihan Akun (Account Takeover)</span>
+              </div>
+            </div>
+            <a href="#kontak" class="btn btn-secondary btn-sm">Konsultasikan Layanan</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         KEUNGGULAN / KENAPA MEMILIH ASPHALEIA AI
+         ========================================================================= -->
+    <section id="keunggulan" class="section-padding">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text-col">
+            <span class="section-tag">Keunggulan Strategis</span>
+            <h2>Mengapa Pemimpin Teknologi Mempercayai Asphaleia AI?</h2>
+            <p>
+              Di era di mana serangan siber terjadi dalam kecepatan mikron dan peretas memanfaatkan AI untuk membobol sistem, metode keamanan tradisional berbasis tanda tangan manual (signature-based) sudah usang.
+            </p>
+            <p>
+              Asphaleia AI merancang sistem pertahanan aktif yang mampu beradaptasi mandiri terhadap vektor serangan yang belum pernah ada sebelumnya. Kami mentransformasi tim SOC Anda dari mode reaktif menjadi pertahanan prediktif otonom.
+            </p>
+            <div style="margin-top: 2rem;">
+              <a href="#kontak" class="btn btn-primary">Minta Demo Langsung</a>
+            </div>
+          </div>
+
+          <div class="advantages-grid">
+            <div class="advantage-card">
+              <div class="advantage-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+              </div>
+              <h4 class="advantage-title">Deteksi Di Bawah 45ms</h4>
+              <p class="advantage-desc">Eksekusi mitigasi instan pada level edge gateway sebelum payload berbahaya menjangkau database inti Anda.</p>
+            </div>
+
+            <div class="advantage-card">
+              <div class="advantage-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h4 class="advantage-title">Eliminasi Alert Fatigue</h4>
+              <p class="advantage-desc">Mengurangi false positive alarm hingga 94%, memastikan analis keamanan fokus pada anomali bernilai tinggi.</p>
+            </div>
+
+            <div class="advantage-card">
+              <div class="advantage-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </div>
+              <h4 class="advantage-title">Self-Learning Models</h4>
+              <p class="advantage-desc">Algoritma AI secara kontinu memperbarui baseline ancaman dari telemetry global tanpa perlu restart manual.</p>
+            </div>
+
+            <div class="advantage-card">
+              <div class="advantage-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <h4 class="advantage-title">Kepatuhan Regulasi Penuh</h4>
+              <p class="advantage-desc">Memenuhi standar ketat UU Perlindungan Data Pribadi (UU PDP), ISO/IEC 27001, SOC 2 Type II, dan PCI-DSS.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         TENTANG KAMI SECTION
+         ========================================================================= -->
+    <section id="tentang" class="section-padding" style="background: var(--bg-surface);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tentang Asphaleia AI</span>
+          <h2>Membangun Ketahanan Digital Indonesia & Dunia</h2>
+          <p>
+            Didirikan oleh gabungan peneliti AI dan praktisi pertahanan siber berpengalaman, Asphaleia AI berkomitmen menghadirkan kedaulatan keamanan data enterprise melalui inovasi kecerdasan buatan terdepan.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-col">
+            <h3>Visi & Misi Kami</h3>
+            <p>
+              Nama <strong>Asphaleia</strong> berakar dari kata Yunani kuno yang berarti kepastian, keandalan, dan keselamatan yang tak tergoyahkan. Di era konvergensi AI dan serangan siber skala luas, kami percaya setiap entitas bisnis dan layanan publik berhak mendapatkan pertahanan keamanan tingkat militer yang mudah diintegrasikan.
+            </p>
+            <p>
+              Dengan arsitektur hybrid on-premise dan cloud, Asphaleia AI telah melindungi lebih dari 120+ institusi finansial, kesehatan, fintech, dan e-commerce dari jutaan ancaman siber setiap harinya.
+            </p>
+            <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+              <a href="blog.html" class="btn btn-secondary btn-sm">Baca Publikasi Riset AI Kami &rarr;</a>
+              <a href="cv.html" class="btn btn-secondary btn-sm">Profil Engineer (CV) &rarr;</a>
+            </div>
+          </div>
+
+          <div style="background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle); padding: 2rem; border-radius: var(--radius-md);">
+            <h4 style="margin-bottom: 1.25rem; font-size: 1.15rem; color: var(--accent-emerald-light);">Sertifikasi & Standar Industri</h4>
+            <ul style="display: flex; flex-direction: column; gap: 1rem;">
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem; color: var(--text-light);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span>ISO/IEC 27001:2022 Information Security Certified</span>
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem; color: var(--text-light);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span>SOC 2 Type II Security & Confidentiality Attested</span>
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem; color: var(--text-light);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span>OWASP AI & LLM Security Compliance Verified</span>
+              </li>
+              <li style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem; color: var(--text-light);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span>Kompatibilitas Penuh dengan Regulasi UU PDP No. 27/2022</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         KONTAK & FORMULIR KONSULTASI SECTION
+         ========================================================================= -->
+    <section id="kontak" class="contact-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Hubungi Kami</span>
+          <h2>Konsultasikan Keamanan Siber Bisnis Anda</h2>
+          <p>
+            Dapatkan evaluasi postur keamanan gratis dan demonstrasi bagaimana Asphaleia AI melindungi sistem kritis organisasi Anda.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Informasi Kontak -->
+          <div class="contact-info-card">
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-item-text">
+                <h4>Kantor Pusat Operasional</h4>
+                <p>Cyber 2 Tower, Lantai 18, Jl. H.R. Rasuna Said Blok X-5, Kav. 13, Jakarta Selatan 12950, Indonesia</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-item-text">
+                <h4>Email Konsultasi & Kemitraan</h4>
+                <p><a href="mailto:security@asphaleia.ai">security@asphaleia.ai</a></p>
+                <p><a href="mailto:info@asphaleia.ai">info@asphaleia.ai</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="contact-item-text">
+                <h4>Telepon / Hotline Insiden Darurat</h4>
+                <p>Hotline: +62 21 5088-7711 (24/7 Incident Hotline)</p>
+                <p>WhatsApp: +62 811-9234-8800</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div class="contact-item-text">
+                <h4>Waktu Operasi SOC</h4>
+                <p>Autonomous AI SOC Engine beroperasi aktif 24 jam / 7 hari / 365 hari tanpa henti.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulir Kontak Sederhana -->
+          <div class="contact-form-card">
+            <form id="contact-form" onsubmit="event.preventDefault(); document.getElementById('form-status').style.display='block';">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Nama Lengkap *</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="Contoh: Rian Pratama" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Perusahaan / Institusi *</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="nama@perusahaan.co.id" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-service" class="form-label">Layanan AI yang Diminati *</label>
+                <select id="contact-service" class="form-control" required>
+                  <option value="" disabled selected>Pilih Layanan AI Cyber Security</option>
+                  <option value="soc">Autonomous SOC & Real-Time Triage</option>
+                  <option value="vuln">Predictive Vulnerability Intelligence</option>
+                  <option value="llm">GenAI & LLM Security Firewall</option>
+                  <option value="anomaly">Behavioral Anomaly & Anti-Insider</option>
+                  <option value="custom">Audit Keamanan & Custom AI Defense</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Deskripsi Kebutuhan / Pesan *</label>
+                <textarea id="contact-message" class="form-control" placeholder="Jelaskan infrastruktur atau tantangan keamanan siber yang sedang dihadapi..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn" id="btn-submit-contact">
+                Kirim Permintaan Konsultasi
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div class="form-status-msg" id="form-status">
+                <strong style="display: block; margin-bottom: 0.25rem;">Permintaan Terkirim!</strong>
+                Tim AI Security Architect kami akan menghubungi Anda dalam waktu 1x24 jam untuk jadwal konsultasi.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Kolom 1: Profil Perusahaan -->
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <span>Asphaleia<span style="color: var(--accent-emerald);">.AI</span></span>
+          </div>
+          <p style="font-size: 0.92rem; margin-bottom: 1.25rem;">
+            Pelopor layanan keamanan siber otonom berbasis kecerdasan buatan. Melindungi aset digital, model AI, dan data enterprise dari ancaman siber mutakhir.
+          </p>
+          <span class="project-id-badge">Proyek: ifs18005-pabwe-p2</span>
+        </div>
+
+        <!-- Kolom 2: Navigasi Internal -->
+        <div class="footer-col">
+          <h4>Navigasi Halaman</h4>
+          <ul class="footer-links">
+            <li><a href="#hero" class="footer-link">Beranda Utama</a></li>
+            <li><a href="#layanan" class="footer-link">Layanan AI Cyber</a></li>
+            <li><a href="#keunggulan" class="footer-link">Keunggulan Teknologi</a></li>
+            <li><a href="#tentang" class="footer-link">Tentang Asphaleia AI</a></li>
+            <li><a href="#kontak" class="footer-link">Hubungi Konsultan</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3: Halaman Proyek Terhubung -->
+        <div class="footer-col">
+          <h4>Ekosistem Studi Kasus</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="index.html" class="footer-link" style="color: var(--accent-emerald-light);">
+                Landing Page (Pure CSS)
+              </a>
+            </li>
+            <li>
+              <a href="blog.html" class="footer-link" style="color: var(--accent-cyan);">
+                Daftar Blog AI (Bootstrap 5)
+              </a>
+            </li>
+            <li>
+              <a href="blog-detail.html" class="footer-link">
+                Detail Artikel Blog
+              </a>
+            </li>
+            <li>
+              <a href="cv.html" class="footer-link" style="color: #a78bfa;">
+                Curriculum Vitae (Tailwind 4)
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Kolom 4: Sertifikasi & Kontak Cepat -->
+        <div class="footer-col">
+          <h4>Keamanan & Standar</h4>
+          <p style="font-size: 0.88rem; margin-bottom: 0.75rem;">
+            Audit berkala dan kepatuhan penuh terhadap ISO 27001, SOC 2 Type II, dan Regulasi PDP Indonesia.
+          </p>
+          <p style="font-size: 0.85rem; color: var(--text-light);">
+            Email: <a href="mailto:security@asphaleia.ai" style="color: var(--accent-emerald);">security@asphaleia.ai</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Asphaleia AI Inc. Hak Cipta Dilindungi Undang-Undang. Praktikum Pemrograman Aplikasi Berbasis Web.</p>
+        <p>Built with Semantic HTML5 & Pure External CSS (No Frameworks).</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Navigasi Mobile Responsif Ringan -->
+  <script>
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (mobileToggle && navMenu) {
+      mobileToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('open');
+      });
+
+      // Tutup menu otomatis saat link diklik pada mode mobile
+      const navLinks = navMenu.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('open');
+        });
+      });
+    }
+  </script>
+</body>
+</html>

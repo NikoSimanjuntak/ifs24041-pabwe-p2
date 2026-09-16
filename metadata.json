@@ -1,0 +1,6 @@
+{
+  "name": "Asphaleia AI - Cyber Security Solutions",
+  "description": "Website resmi Asphaleia AI, penyedia layanan kecerdasan buatan untuk keamanan siber enterprise, autonomous SOC, dan perlindungan ancaman digital.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
