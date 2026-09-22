@@ -1,172 +1,147 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV — Ilham Nugraha | Asphaleia AI</title>
-
-<!-- Tailwind CSS 4 (Play CDN, untuk keperluan praktikum) -->
-<script src="https://cdn.tailwindcss.com/@tailwindcss/browser@4"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-<style type="text/tailwindcss">
-  @theme {
-    --color-ink: #0B1220;
-    --color-panel: #121B2E;
-    --color-line: #26344E;
-    --color-signal: #3FD6C0;
-    --color-alert: #F5A93F;
-    --color-muted: #8CA0B8;
-    --font-display: 'Space Grotesk', sans-serif;
-    --font-body: 'Inter', sans-serif;
-  }
-  body { font-family: var(--font-body); }
-  h1, h2, .brand { font-family: var(--font-display); }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Asphaleia AI - Jasa AI dan Cyber Security untuk membantu organisasi membangun sistem digital yang cerdas dan aman.">
+  <title>Asphaleia AI | AI & Cyber Security</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="bg-ink text-slate-100">
-
-<!-- ============ NAVBAR ============ -->
-<nav class="sticky top-0 z-50 bg-ink/90 backdrop-blur border-b border-line">
-  <div class="max-w-5xl mx-auto px-5 py-3 flex items-center justify-between">
-    <a href="index.html" class="brand flex items-center gap-2 font-bold text-lg">
-      <span class="w-8 h-8 rounded-md bg-gradient-to-br from-signal to-teal-600 flex items-center justify-center text-ink font-bold">A</span>
-      Asphaleia AI
-    </a>
-    <div class="hidden sm:flex items-center gap-6 text-sm text-muted">
-      <a href="index.html" class="hover:text-signal transition">Beranda</a>
-      <a href="blog.html" class="hover:text-signal transition">Blog</a>
-      <a href="cv.html" class="text-signal">CV</a>
-    </div>
-  </div>
-</nav>
-
-<main class="max-w-3xl mx-auto px-5 py-10 sm:py-14">
-
-  <!-- ============ HEADER PROFIL ============ -->
-  <header class="flex flex-col sm:flex-row items-start sm:items-center gap-6 pb-8 border-b border-line">
-    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&crop=faces"
-         alt="Foto profil Ilham Nugraha"
-         class="w-28 h-28 rounded-xl object-cover border border-line">
-    <div>
-      <h1 class="text-3xl font-bold">Ilham Nugraha</h1>
-      <p class="text-signal font-medium mt-1">Aspiring AI Security Engineer</p>
-      <div class="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-sm text-muted">
-        <span>ilham.nugraha@mail.com</span>
-        <span>+62 812-3456-7890</span>
-        <span>Bandung, Indonesia</span>
+<body>
+  <!-- Header dan navigasi utama -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="index.html"><span class="brand-mark">A</span> Asphaleia <span>AI</span></a>
+      <div class="nav-links">
+        <a href="#layanan">Layanan</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+        <a href="blog.html">Blog</a>
+        <a href="cv.html">CV</a>
       </div>
-      <div class="flex gap-4 mt-2 text-sm">
-        <a href="#" class="text-muted hover:text-signal transition">github.com/ilhamnugraha</a>
-        <a href="#" class="text-muted hover:text-signal transition">linkedin.com/in/ilhamnugraha</a>
-      </div>
-    </div>
+    </nav>
   </header>
 
-  <!-- ============ RINGKASAN ============ -->
-  <section class="py-8 border-b border-line">
-    <h2 class="text-xl font-semibold mb-3">Tentang Saya</h2>
-    <p class="text-muted leading-relaxed">
-      Mahasiswa Informatika dengan minat pada keamanan siber dan penerapan kecerdasan buatan untuk deteksi ancaman.
-      Berpengalaman membangun antarmuka web serta bereksperimen dengan model machine learning sederhana untuk
-      klasifikasi anomali jaringan. Tertarik berkontribusi pada tim yang menggabungkan riset AI dengan praktik
-      keamanan aplikasi.
-    </p>
-  </section>
-
-  <!-- ============ PENDIDIKAN ============ -->
-  <section class="py-8 border-b border-line">
-    <h2 class="text-xl font-semibold mb-4">Pendidikan</h2>
-    <div class="space-y-4">
-      <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
         <div>
-          <p class="font-medium">S1 Informatika</p>
-          <p class="text-muted text-sm">Universitas Teknologi Nusantara</p>
+          <p class="eyebrow">AI • CYBER SECURITY • DIGITAL TRUST</p>
+          <h1>Bangun teknologi cerdas yang <span>aman sejak awal.</span></h1>
+          <p class="hero-text">Asphaleia AI membantu bisnis memanfaatkan Artificial Intelligence sekaligus memperkuat keamanan sistem, data, dan proses digital.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#kontak">Konsultasi Sekarang</a>
+            <a class="btn btn-secondary" href="#layanan">Lihat Layanan</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>AI</strong><small>Automation</small></div>
+            <div><strong>SEC</strong><small>Cyber Security</small></div>
+            <div><strong>DATA</strong><small>Protection</small></div>
+          </div>
         </div>
-        <span class="text-sm text-muted">2023 — sekarang</span>
+        <div class="hero-panel" aria-label="Ilustrasi keamanan AI">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="shield">
+            <span>✦</span>
+            <strong>AI</strong>
+            <small>SECURED</small>
+          </div>
+          <div class="panel-tag tag-top">THREAT DETECTION <b>ACTIVE</b></div>
+          <div class="panel-tag tag-bottom">INTELLIGENT DEFENSE</div>
+        </div>
       </div>
-      <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+    </section>
+
+    <!-- Layanan -->
+    <section id="layanan" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">LAYANAN</p>
+          <h2>Solusi AI dan keamanan untuk kebutuhan digital modern.</h2>
+          <p>Kami menggabungkan otomasi cerdas, analitik, dan praktik keamanan untuk menciptakan sistem yang efektif dan terlindungi.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="icon">AI</div>
+            <h3>AI Automation</h3>
+            <p>Otomasi proses bisnis dengan AI, workflow intelligence, dan virtual assistant yang disesuaikan dengan kebutuhan organisasi.</p>
+            <a href="#kontak">Pelajari layanan →</a>
+          </article>
+          <article class="service-card">
+            <div class="icon">⌁</div>
+            <h3>Cyber Security</h3>
+            <p>Penguatan keamanan aplikasi dan infrastruktur melalui assessment, monitoring, threat detection, dan security awareness.</p>
+            <a href="#kontak">Pelajari layanan →</a>
+          </article>
+          <article class="service-card">
+            <div class="icon">◈</div>
+            <h3>AI Security</h3>
+            <p>Perancangan sistem AI yang memperhatikan keamanan data, kontrol akses, evaluasi risiko, dan penggunaan model yang bertanggung jawab.</p>
+            <a href="#kontak">Pelajari layanan →</a>
+          </article>
+          <article class="service-card">
+            <div class="icon">DS</div>
+            <h3>Data Intelligence</h3>
+            <p>Mengubah data menjadi insight dengan analitik dan machine learning untuk mendukung keputusan yang lebih terukur.</p>
+            <a href="#kontak">Pelajari layanan →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang / keunggulan -->
+    <section id="tentang" class="section section-dark">
+      <div class="container about-grid">
         <div>
-          <p class="font-medium">SMA Negeri 3 Bandung</p>
-          <p class="text-muted text-sm">Jurusan MIPA</p>
+          <p class="eyebrow">TENTANG ASPHALEIA AI</p>
+          <h2>Security-minded AI untuk dunia yang terus berubah.</h2>
+          <p>Asphaleia AI adalah konsep perusahaan teknologi yang berfokus pada integrasi Artificial Intelligence dan Cyber Security. Kami membantu organisasi mengidentifikasi peluang otomasi tanpa mengabaikan perlindungan data dan keamanan sistem.</p>
+          <p>Pendekatan kami dimulai dari kebutuhan bisnis, dilanjutkan dengan desain solusi, implementasi, dan evaluasi agar teknologi dapat digunakan secara terukur.</p>
         </div>
-        <span class="text-sm text-muted">2020 — 2023</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ PENGALAMAN ============ -->
-  <section class="py-8 border-b border-line">
-    <h2 class="text-xl font-semibold mb-4">Pengalaman</h2>
-    <div class="space-y-6">
-      <div>
-        <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
-          <p class="font-medium">Magang Cybersecurity Analyst — Asphaleia AI</p>
-          <span class="text-sm text-muted">Jun 2026 — Agu 2026</span>
+        <div class="advantage-list">
+          <div><span>01</span><div><h3>Security by Design</h3><p>Keamanan dipertimbangkan sejak tahap perencanaan solusi.</p></div></div>
+          <div><span>02</span><div><h3>Practical AI</h3><p>Solusi AI diarahkan pada kebutuhan dan proses nyata.</p></div></div>
+          <div><span>03</span><div><h3>Data Aware</h3><p>Data diperlakukan sebagai aset yang perlu dikelola dan dilindungi.</p></div></div>
         </div>
-        <ul class="list-disc list-inside text-muted text-sm mt-2 space-y-1">
-          <li>Membantu menganalisis log anomali dari sistem deteksi ancaman berbasis AI.</li>
-          <li>Menyusun dokumentasi playbook respons insiden untuk tim SOC.</li>
-        </ul>
       </div>
-      <div>
-        <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
-          <p class="font-medium">Anggota Divisi Teknis — Himpunan Mahasiswa Informatika</p>
-          <span class="text-sm text-muted">2024 — 2025</span>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="section">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">KONTAK</p>
+          <h2>Siap membuat sistem yang lebih cerdas dan aman?</h2>
+          <p>Diskusikan kebutuhan AI atau Cyber Security Anda bersama Asphaleia AI.</p>
+          <div class="contact-info">
+            <p><strong>Email</strong><br>hello@asphaleia.ai</p>
+            <p><strong>Jam layanan</strong><br>Senin–Jumat, 09.00–17.00 WIB</p>
+          </div>
         </div>
-        <ul class="list-disc list-inside text-muted text-sm mt-2 space-y-1">
-          <li>Mengelola dan mengamankan server internal organisasi.</li>
-          <li>Mengadakan workshop pengenalan keamanan siber untuk mahasiswa baru.</li>
-        </ul>
+        <form class="contact-form" action="#" method="post">
+          <label for="nama">Nama</label>
+          <input id="nama" name="nama" type="text" placeholder="Nama lengkap" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="nama@email.com" required>
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="5" placeholder="Ceritakan kebutuhan Anda..." required></textarea>
+          <button class="btn btn-primary" type="submit">Kirim Konsultasi</button>
+        </form>
       </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>Asphaleia AI</strong><span>AI & Cyber Security</span></div>
+      <div class="footer-links"><a href="blog.html">Blog</a><a href="cv.html">CV</a><a href="#kontak">Kontak</a></div>
+      <p>© 2026 Asphaleia AI. Semua hak dilindungi.</p>
     </div>
-  </section>
-
-  <!-- ============ KEAHLIAN ============ -->
-  <section class="py-8 border-b border-line">
-    <h2 class="text-xl font-semibold mb-4">Keahlian</h2>
-    <div class="flex flex-wrap gap-2">
-      <span class="px-3 py-1 rounded-full text-sm border border-line bg-panel text-slate-200">HTML &amp; CSS</span>
-      <span class="px-3 py-1 rounded-full text-sm border border-line bg-panel text-slate-200">Bootstrap 5</span>
-      <span class="px-3 py-1 rounded-full text-sm border border-line bg-panel text-slate-200">Tailwind CSS</span>
-      <span class="px-3 py-1 rounded-full text-sm border border-line bg-panel text-slate-200">Python</span>
-      <span class="px-3 py-1 rounded-full text-sm border border-line bg-panel text-slate-200">Jaringan &amp; Keamanan Dasar</span>
-      <span class="px-3 py-1 rounded-full text-sm border border-line bg-panel text-slate-200">Git</span>
-    </div>
-  </section>
-
-  <!-- ============ SERTIFIKAT ============ -->
-  <section class="py-8 border-b border-line">
-    <h2 class="text-xl font-semibold mb-4">Sertifikat &amp; Penghargaan</h2>
-    <ul class="space-y-2 text-muted text-sm">
-      <li class="flex justify-between"><span>Introduction to Cybersecurity — Cisco Networking Academy</span><span>2025</span></li>
-      <li class="flex justify-between"><span>Juara 2, Capture The Flag Tingkat Universitas</span><span>2025</span></li>
-    </ul>
-  </section>
-
-  <!-- ============ PROYEK ============ -->
-  <section class="py-8">
-    <h2 class="text-xl font-semibold mb-4">Proyek</h2>
-    <div class="grid sm:grid-cols-2 gap-4">
-      <a href="index.html" class="block p-4 rounded-lg border border-line bg-panel hover:border-signal transition">
-        <p class="font-medium">Asphaleia AI — Landing Page</p>
-        <p class="text-muted text-sm mt-1">Landing page perusahaan jasa AI cybersecurity, dibangun dengan HTML &amp; CSS murni.</p>
-      </a>
-      <a href="blog.html" class="block p-4 rounded-lg border border-line bg-panel hover:border-signal transition">
-        <p class="font-medium">Asphaleia Blog</p>
-        <p class="text-muted text-sm mt-1">Platform blog seputar AI &amp; keamanan siber, dibangun dengan Bootstrap 5.</p>
-      </a>
-    </div>
-  </section>
-
-</main>
-
-<footer class="border-t border-line py-6">
-  <div class="max-w-3xl mx-auto px-5 text-sm text-muted flex flex-wrap justify-between gap-2">
-    <span>© 2026 Ilham Nugraha</span>
-    <a href="index.html" class="hover:text-signal transition">Kembali ke Asphaleia AI</a>
-  </div>
-</footer>
-
+  </footer>
 </body>
 </html>

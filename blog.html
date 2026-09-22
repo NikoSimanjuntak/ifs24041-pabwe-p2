@@ -1,232 +1,104 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog — Asphaleia AI</title>
-<meta name="description" content="Wawasan seputar keamanan siber dan kecerdasan buatan dari tim Asphaleia AI.">
-
-<!-- Bootstrap 5 -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- Bootstrap Icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-<!-- Google Fonts (konsisten dengan halaman lain) -->
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-<style>
-  :root{
-    --ink:#0B1220; --panel:#121B2E; --line:#26344E;
-    --signal:#3FD6C0; --alert:#F5A93F; --text:#EAF1F5; --muted:#8CA0B8;
-  }
-  body{
-    background-color:var(--ink);
-    color:var(--text);
-    font-family:'Inter',sans-serif;
-  }
-  h1,h2,h3,.navbar-brand,.card-title{ font-family:'Space Grotesk',sans-serif; }
-
-  .navbar-asphaleia{
-    background-color:rgba(11,18,32,0.9);
-    border-bottom:1px solid var(--line);
-  }
-  .navbar-asphaleia .nav-link{ color:var(--muted); }
-  .navbar-asphaleia .nav-link:hover, .navbar-asphaleia .nav-link.active{ color:var(--signal); }
-  .brand-mark{
-    width:30px; height:30px; border-radius:7px;
-    background:linear-gradient(145deg,var(--signal),#2AA79A);
-    display:inline-flex; align-items:center; justify-content:center;
-    color:var(--ink); font-weight:700; font-family:'Space Grotesk',sans-serif;
-    margin-right:.5rem;
-  }
-
-  .page-hero{ padding:3.5rem 0 2rem; border-bottom:1px solid var(--line); }
-  .eyebrow-tag{
-    display:inline-flex; align-items:center; gap:.5rem;
-    font-size:.78rem; color:var(--signal);
-    border:1px solid var(--line); border-radius:999px; padding:.3rem .8rem;
-  }
-  .eyebrow-tag::before{ content:''; width:6px; height:6px; border-radius:50%; background:var(--signal); }
-
-  .filter-chip{
-    border:1px solid var(--line); color:var(--muted);
-    border-radius:999px; padding:.35rem .9rem; font-size:.85rem;
-    background:transparent; transition:.15s;
-  }
-  .filter-chip:hover, .filter-chip.active{ border-color:var(--signal); color:var(--signal); }
-
-  .blog-card{
-    background-color:var(--panel);
-    border:1px solid var(--line);
-    border-top:3px solid var(--signal);
-    border-radius:8px;
-    overflow:hidden;
-    transition:transform .15s ease, border-color .15s ease;
-  }
-  .blog-card:hover{ transform:translateY(-3px); border-color:var(--signal); }
-  .blog-card img{ height:190px; object-fit:cover; width:100%; }
-  .blog-card .card-title a{ color:var(--text); text-decoration:none; }
-  .blog-card .card-title a:hover{ color:var(--signal); }
-  .blog-card .card-text{ color:var(--muted); font-size:.93rem; }
-
-  .badge-kategori{
-    background-color:rgba(63,214,192,0.12);
-    color:var(--signal);
-    font-weight:500;
-    border:1px solid rgba(63,214,192,0.3);
-  }
-  .meta-info{ color:var(--muted); font-size:.82rem; }
-  .meta-info i{ color:var(--signal); margin-right:.25rem; }
-
-  .site-footer{ border-top:1px solid var(--line); padding:1.5rem 0; margin-top:3rem; color:var(--muted); font-size:.85rem; }
-  .site-footer a{ color:var(--muted); text-decoration:none; }
-  .site-footer a:hover{ color:var(--signal); }
-</style>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Asphaleia AI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body{background:#f5f8fc;color:#17263a}.brand{font-weight:800;letter-spacing:-.03em}.brand span{color:#16b9aa}.hero-blog{background:#07111f;color:white}.card{border:0;box-shadow:0 10px 30px rgba(20,50,80,.08);height:100%;overflow:hidden}.cover{height:190px;object-fit:cover}.badge-soft{background:#e3faf7;color:#087f75}.article-link{color:#102238;text-decoration:none}.article-link:hover{color:#0d9e92}.meta{font-size:.82rem;color:#6c7b8c}.footer{background:#040c16;color:#9cafc1}
+  </style>
 </head>
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background:#07111f">
+      <div class="container py-2">
+        <a class="navbar-brand brand" href="index.html"><span>A</span> Asphaleia AI</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Buka navigasi"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+            <li class="nav-item"><a class="btn btn-sm btn-outline-light" href="index.html#kontak">Konsultasi</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-<!-- ============ NAVBAR ============ -->
-<nav class="navbar navbar-expand-lg navbar-asphaleia sticky-top">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
-      <span class="brand-mark">A</span> Asphaleia AI
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Buka menu navigasi">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto gap-lg-3">
-        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
-        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  <main>
+    <section class="hero-blog py-5">
+      <div class="container py-4">
+        <span class="text-uppercase small fw-bold text-info">Asphaleia AI Journal</span>
+        <h1 class="display-4 fw-bold mt-2">Wawasan AI & Cyber Security</h1>
+        <p class="lead text-white-50 col-lg-7">Artikel singkat mengenai Artificial Intelligence, keamanan siber, data, dan teknologi yang membantu organisasi beradaptasi.</p>
+        <div class="d-flex gap-2 flex-wrap mt-4">
+          <span class="badge rounded-pill badge-soft"><i class="bi bi-stars"></i> Generative AI</span>
+          <span class="badge rounded-pill badge-soft"><i class="bi bi-shield-check"></i> Cyber Security</span>
+          <span class="badge rounded-pill badge-soft"><i class="bi bi-database"></i> Data</span>
+          <span class="badge rounded-pill badge-soft"><i class="bi bi-robot"></i> Machine Learning</span>
+        </div>
+      </div>
+    </section>
 
-<!-- ============ HERO ============ -->
-<header class="page-hero">
-  <div class="container">
-    <span class="eyebrow-tag"><i class="bi bi-journal-text"></i> Blog Asphaleia</span>
-    <h1 class="mt-3 mb-2">Wawasan AI &amp; Keamanan Siber</h1>
-    <p class="text-secondary" style="max-width:60ch;">Catatan tim riset kami seputar ancaman siber generasi baru, pertahanan berbasis AI, dan praktik terbaik menjaga sistem tetap aman.</p>
-
-    <div class="d-flex flex-wrap gap-2 mt-3">
-      <button class="filter-chip active" type="button">Semua</button>
-      <button class="filter-chip" type="button">Keamanan LLM</button>
-      <button class="filter-chip" type="button">Computer Vision</button>
-      <button class="filter-chip" type="button">Arsitektur Keamanan</button>
-      <button class="filter-chip" type="button">Etika AI</button>
-    </div>
-  </div>
-</header>
-
-<!-- ============ DAFTAR ARTIKEL ============ -->
-<main class="container py-5">
-  <div class="row g-4">
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <article class="card blog-card h-100">
-        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop" alt="Ilustrasi kode dan keamanan LLM">
-        <div class="card-body">
-          <span class="badge badge-kategori mb-2"><i class="bi bi-shield-lock"></i> Keamanan LLM</span>
-          <h3 class="card-title h5"><a href="blog-detail.html">Prompt Injection: Ancaman Baru di Era LLM</a></h3>
-          <p class="card-text">Bagaimana instruksi tersembunyi dalam teks dapat membajak perilaku chatbot AI, dan langkah mitigasi yang bisa diterapkan tim keamanan.</p>
-          <div class="d-flex justify-content-between meta-info pt-2 border-top" style="border-color:var(--line)!important;">
-            <span><i class="bi bi-person"></i> Tim Riset</span>
-            <span><i class="bi bi-calendar3"></i> 12 Sep 2026</span>
-            <span><i class="bi bi-clock"></i> 6 mnt</span>
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <article class="card">
+              <div class="cover d-flex align-items-center justify-content-center bg-dark text-info fs-1"><i class="bi bi-shield-lock"></i></div>
+              <div class="card-body d-flex flex-column">
+                <span class="badge badge-soft align-self-start mb-3">AI Security</span>
+                <h2 class="h5"><a class="article-link" href="blog-detail.html">Mengapa AI Security Penting dalam Transformasi Digital?</a></h2>
+                <p class="text-secondary small">Memahami hubungan antara AI, data, kontrol akses, dan keamanan sistem.</p>
+                <div class="meta mt-auto"><i class="bi bi-person"></i> Tim Asphaleia · <i class="bi bi-calendar3"></i> 20 Sep 2026</div>
+                <a href="blog-detail.html" class="btn btn-outline-dark btn-sm mt-3">Baca selengkapnya</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="card">
+              <div class="cover d-flex align-items-center justify-content-center bg-primary text-white fs-1"><i class="bi bi-stars"></i></div>
+              <div class="card-body d-flex flex-column">
+                <span class="badge badge-soft align-self-start mb-3">Generative AI</span>
+                <h2 class="h5"><a class="article-link" href="blog-detail.html">Mengenal RAG untuk Aplikasi AI Berbasis Pengetahuan</a></h2>
+                <p class="text-secondary small">Bagaimana retrieval membantu model menggunakan sumber pengetahuan yang relevan.</p>
+                <div class="meta mt-auto"><i class="bi bi-person"></i> Tim Asphaleia · <i class="bi bi-calendar3"></i> 16 Sep 2026</div>
+                <a href="blog-detail.html" class="btn btn-outline-dark btn-sm mt-3">Baca selengkapnya</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="card">
+              <div class="cover d-flex align-items-center justify-content-center bg-dark text-info fs-1"><i class="bi bi-activity"></i></div>
+              <div class="card-body d-flex flex-column">
+                <span class="badge badge-soft align-self-start mb-3">Cyber Security</span>
+                <h2 class="h5"><a class="article-link" href="blog-detail.html">Threat Detection dengan Machine Learning</a></h2>
+                <p class="text-secondary small">Gambaran penggunaan model untuk membantu menemukan pola aktivitas yang tidak biasa.</p>
+                <div class="meta mt-auto"><i class="bi bi-person"></i> Tim Asphaleia · <i class="bi bi-calendar3"></i> 12 Sep 2026</div>
+                <a href="blog-detail.html" class="btn btn-outline-dark btn-sm mt-3">Baca selengkapnya</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="card">
+              <div class="cover d-flex align-items-center justify-content-center bg-secondary text-white fs-1"><i class="bi bi-code-slash"></i></div>
+              <div class="card-body d-flex flex-column">
+                <span class="badge badge-soft align-self-start mb-3">AI Engineering</span>
+                <h2 class="h5"><a class="article-link" href="blog-detail.html">Prompt Engineering untuk Workflow yang Lebih Konsisten</a></h2>
+                <p class="text-secondary small">Prinsip dasar membuat instruksi model yang jelas, terukur, dan mudah dievaluasi.</p>
+                <div class="meta mt-auto"><i class="bi bi-person"></i> Tim Asphaleia · <i class="bi bi-calendar3"></i> 08 Sep 2026</div>
+                <a href="blog-detail.html" class="btn btn-outline-dark btn-sm mt-3">Baca selengkapnya</a>
+              </div>
+            </article>
           </div>
         </div>
-      </article>
-    </div>
+      </div>
+    </section>
+  </main>
 
-    <div class="col-12 col-md-6 col-lg-4">
-      <article class="card blog-card h-100">
-        <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600&h=400&fit=crop" alt="Ilustrasi arsitektur jaringan zero trust">
-        <div class="card-body">
-          <span class="badge badge-kategori mb-2"><i class="bi bi-diagram-3"></i> Arsitektur Keamanan</span>
-          <h3 class="card-title h5"><a href="blog-detail.html">Zero Trust Architecture dengan Bantuan AI</a></h3>
-          <p class="card-text">Model AI dapat mempercepat verifikasi identitas dan perangkat secara kontinu — inti dari prinsip "never trust, always verify".</p>
-          <div class="d-flex justify-content-between meta-info pt-2 border-top" style="border-color:var(--line)!important;">
-            <span><i class="bi bi-person"></i> Dinda A.</span>
-            <span><i class="bi bi-calendar3"></i> 05 Sep 2026</span>
-            <span><i class="bi bi-clock"></i> 8 mnt</span>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <article class="card blog-card h-100">
-        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop" alt="Ilustrasi kamera pengawas dan computer vision">
-        <div class="card-body">
-          <span class="badge badge-kategori mb-2"><i class="bi bi-camera-video"></i> Computer Vision</span>
-          <h3 class="card-title h5"><a href="blog-detail.html">Mendeteksi Deepfake dengan Computer Vision</a></h3>
-          <p class="card-text">Teknik di balik model deteksi wajah palsu, serta tantangan yang muncul seiring teknologi generatif semakin realistis.</p>
-          <div class="d-flex justify-content-between meta-info pt-2 border-top" style="border-color:var(--line)!important;">
-            <span><i class="bi bi-person"></i> Fajar S.</span>
-            <span><i class="bi bi-calendar3"></i> 28 Agu 2026</span>
-            <span><i class="bi bi-clock"></i> 5 mnt</span>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <article class="card blog-card h-100">
-        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=400&fit=crop" alt="Ilustrasi etika dan tata kelola AI">
-        <div class="card-body">
-          <span class="badge badge-kategori mb-2"><i class="bi bi-balance-scale"></i> Etika AI</span>
-          <h3 class="card-title h5"><a href="blog-detail.html">Etika AI dalam Sistem Keamanan Otomatis</a></h3>
-          <p class="card-text">Ketika AI diberi wewenang mengisolasi akun atau memblokir akses, batas tanggung jawab manusia perlu didefinisikan ulang.</p>
-          <div class="d-flex justify-content-between meta-info pt-2 border-top" style="border-color:var(--line)!important;">
-            <span><i class="bi bi-person"></i> Naila R.</span>
-            <span><i class="bi bi-calendar3"></i> 20 Agu 2026</span>
-            <span><i class="bi bi-clock"></i> 7 mnt</span>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <article class="card blog-card h-100">
-        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Ilustrasi pipeline MLOps">
-        <div class="card-body">
-          <span class="badge badge-kategori mb-2"><i class="bi bi-gear-wide-connected"></i> MLOps</span>
-          <h3 class="card-title h5"><a href="blog-detail.html">MLOps untuk Model Deteksi Ancaman</a></h3>
-          <p class="card-text">Menjaga akurasi model deteksi anomali tetap tinggi di tengah pola serangan yang terus berevolusi setiap minggunya.</p>
-          <div class="d-flex justify-content-between meta-info pt-2 border-top" style="border-color:var(--line)!important;">
-            <span><i class="bi bi-person"></i> Tim Riset</span>
-            <span><i class="bi bi-calendar3"></i> 14 Agu 2026</span>
-            <span><i class="bi bi-clock"></i> 9 mnt</span>
-          </div>
-        </div>
-      </article>
-    </div>
-
-  </div>
-
-  <!-- Pagination (opsional) -->
-  <nav class="mt-5" aria-label="Navigasi halaman blog">
-    <ul class="pagination justify-content-center">
-      <li class="page-item active"><span class="page-link" style="background-color:var(--signal);border-color:var(--signal);color:var(--ink);">1</span></li>
-      <li class="page-item"><a class="page-link" href="#" style="background-color:var(--panel);border-color:var(--line);color:var(--text);">2</a></li>
-    </ul>
-  </nav>
-</main>
-
-<!-- ============ FOOTER ============ -->
-<footer class="site-footer">
-  <div class="container d-flex flex-wrap justify-content-between align-items-center">
-    <span>© 2026 Asphaleia AI. Seluruh hak dilindungi.</span>
-    <div class="d-flex gap-3">
-      <a href="index.html">Beranda</a>
-      <a href="blog.html">Blog</a>
-      <a href="cv.html">CV</a>
-    </div>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <footer class="footer py-4 mt-3"><div class="container d-flex justify-content-between flex-wrap gap-3"><span><strong class="text-white">Asphaleia AI</strong> — AI & Cyber Security</span><span>© 2026 · <a class="text-white text-decoration-none" href="index.html">Beranda</a> · <a class="text-white text-decoration-none" href="cv.html">CV</a></span></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
