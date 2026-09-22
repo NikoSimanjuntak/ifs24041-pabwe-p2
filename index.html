@@ -1,502 +1,172 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum Vitae - Niko Amos Simanjuntak | AI Cyber Security Engineer</title>
-  <meta name="description" content="Curriculum Vitae Niko Amos Simanjuntak, AI Cyber Security Engineer & Full-Stack Web Developer. Spesialisasi dalam AI threat detection, LLM security guardrails, dan arsitektur web modern.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV — Ilham Nugraha | Asphaleia AI</title>
 
-  <!-- Resource Hints (Preconnect & DNS-Prefetch for Fast Third-Party Loading) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<!-- Tailwind CSS 4 (Play CDN, untuk keperluan praktikum) -->
+<script src="https://cdn.tailwindcss.com/@tailwindcss/browser@4"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Preload Critical LCP Image -->
-  <link rel="preload" as="image" href="img/cv.webp" type="image/webp" fetchpriority="high">
-
-  <!-- Preload & Defer Tailwind CSS 4 Play Browser Engine (Eliminates Render Blocking) -->
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" as="script">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" defer></script>
-
-  <!-- Asynchronous Google Fonts (Eliminates 850ms+ Render Blocking Delay) -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
-  </noscript>
-
-  <!-- Critical Inline CSS: Prevents Forced Reflow, FOUC, and Cumulative Layout Shifts (CLS) -->
-  <style>
-    html, body {
-      background-color: #020617;
-      color: #f8fafc;
-      margin: 0;
-      min-height: 100vh;
-      font-family: 'Outfit', system-ui, -apple-system, sans-serif;
-    }
-    .avatar-wrapper {
-      width: 144px;
-      height: 144px;
-      aspect-ratio: 1 / 1;
-      contain: layout paint;
-    }
-  </style>
-
-  <style type="text/tailwindcss">
-    @theme {
-      --font-heading: 'Space Grotesk', sans-serif;
-      --font-body: 'Outfit', sans-serif;
-      --color-cyber-dark: #070a12;
-      --color-cyber-card: #0e1526;
-      --color-cyber-border: rgba(255, 255, 255, 0.08);
-      --color-emerald-accent: #10b981;
-      --color-cyan-accent: #06b6d4;
-    }
-  </style>
+<style type="text/tailwindcss">
+  @theme {
+    --color-ink: #0B1220;
+    --color-panel: #121B2E;
+    --color-line: #26344E;
+    --color-signal: #3FD6C0;
+    --color-alert: #F5A93F;
+    --color-muted: #8CA0B8;
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+  body { font-family: var(--font-body); }
+  h1, h2, .brand { font-family: var(--font-display); }
+</style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-['Outfit',sans-serif] min-h-screen flex flex-col antialiased selection:bg-emerald-500 selection:text-slate-950">
+<body class="bg-ink text-slate-100">
 
-  <!-- =========================================================================
-       NAVBAR TERPADU (TAILWIND CSS 4)
-       ========================================================================= -->
-  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/85 border-b border-slate-800">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
-      
-      <!-- Brand Logo Asphaleia AI -->
-      <a href="index.html" class="flex items-center gap-2.5 group">
-        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-emerald-500 to-cyan-500 flex items-center justify-center text-slate-950 font-bold shadow-md shadow-emerald-500/20 group-hover:scale-105 transition-transform">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-          </svg>
-        </div>
-        <span class="font-['Space_Grotesk'] font-bold text-xl tracking-tight text-white">
-          Asphaleia<span class="text-emerald-400">.AI</span>
-        </span>
-        <span class="hidden sm:inline-block text-[11px] font-medium uppercase px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 tracking-wider ml-1">
-          CV Digital
-        </span>
-      </a>
+<!-- ============ NAVBAR ============ -->
+<nav class="sticky top-0 z-50 bg-ink/90 backdrop-blur border-b border-line">
+  <div class="max-w-5xl mx-auto px-5 py-3 flex items-center justify-between">
+    <a href="index.html" class="brand flex items-center gap-2 font-bold text-lg">
+      <span class="w-8 h-8 rounded-md bg-gradient-to-br from-signal to-teal-600 flex items-center justify-center text-ink font-bold">A</span>
+      Asphaleia AI
+    </a>
+    <div class="hidden sm:flex items-center gap-6 text-sm text-muted">
+      <a href="index.html" class="hover:text-signal transition">Beranda</a>
+      <a href="blog.html" class="hover:text-signal transition">Blog</a>
+      <a href="cv.html" class="text-signal">CV</a>
+    </div>
+  </div>
+</nav>
 
-      <!-- Menu Navigasi Silang Halaman (High Contrast WCAG AAA Compliant) -->
-      <nav class="flex items-center gap-1 sm:gap-2">
-        <a href="index.html" class="px-3 py-1.5 text-xs sm:text-sm font-medium text-slate-100 hover:text-white rounded-lg hover:bg-slate-900 transition-colors">
-          Landing Page <span class="hidden md:inline text-slate-300 font-medium">(CSS)</span>
-        </a>
-        <a href="blog.html" class="px-3 py-1.5 text-xs sm:text-sm font-medium text-slate-100 hover:text-cyan-300 rounded-lg hover:bg-slate-900 transition-colors">
-          Blog AI <span class="hidden md:inline text-slate-300 font-medium">(Bootstrap)</span>
-        </a>
-        <a href="cv.html" class="px-3 py-1.5 text-xs sm:text-sm font-semibold text-emerald-300 bg-emerald-500/20 border border-emerald-400/40 rounded-lg shadow-sm">
-          CV <span class="hidden md:inline text-emerald-200 font-medium">(Tailwind 4)</span>
-        </a>
-      </nav>
+<main class="max-w-3xl mx-auto px-5 py-10 sm:py-14">
 
-      <!-- Action Button -->
-      <div class="hidden sm:flex items-center gap-3">
-        <a href="mailto:juntakk1704@gmail.com" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs sm:text-sm font-semibold transition-all shadow-md shadow-emerald-500/20">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
-          Kontak Saya
-        </a>
+  <!-- ============ HEADER PROFIL ============ -->
+  <header class="flex flex-col sm:flex-row items-start sm:items-center gap-6 pb-8 border-b border-line">
+    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&crop=faces"
+         alt="Foto profil Ilham Nugraha"
+         class="w-28 h-28 rounded-xl object-cover border border-line">
+    <div>
+      <h1 class="text-3xl font-bold">Ilham Nugraha</h1>
+      <p class="text-signal font-medium mt-1">Aspiring AI Security Engineer</p>
+      <div class="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-sm text-muted">
+        <span>ilham.nugraha@mail.com</span>
+        <span>+62 812-3456-7890</span>
+        <span>Bandung, Indonesia</span>
+      </div>
+      <div class="flex gap-4 mt-2 text-sm">
+        <a href="#" class="text-muted hover:text-signal transition">github.com/ilhamnugraha</a>
+        <a href="#" class="text-muted hover:text-signal transition">linkedin.com/in/ilhamnugraha</a>
       </div>
     </div>
   </header>
 
-  <!-- =========================================================================
-       MAIN CONTAINER CV DIGITAL
-       ========================================================================= -->
-  <main class="flex-grow py-10 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full">
+  <!-- ============ RINGKASAN ============ -->
+  <section class="py-8 border-b border-line">
+    <h2 class="text-xl font-semibold mb-3">Tentang Saya</h2>
+    <p class="text-muted leading-relaxed">
+      Mahasiswa Informatika dengan minat pada keamanan siber dan penerapan kecerdasan buatan untuk deteksi ancaman.
+      Berpengalaman membangun antarmuka web serta bereksperimen dengan model machine learning sederhana untuk
+      klasifikasi anomali jaringan. Tertarik berkontribusi pada tim yang menggabungkan riset AI dengan praktik
+      keamanan aplikasi.
+    </p>
+  </section>
 
-    <!-- =========================================================================
-         HEADER PROFIL (AVATAR, IDENTITAS, KONTAK)
-         ========================================================================= -->
-    <section class="bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl shadow-black/40 mb-8 relative overflow-hidden">
-      <!-- Glow Decor -->
-      <div class="absolute top-0 right-0 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20"></div>
-
-      <div class="flex flex-col md:flex-row items-center md:items-start gap-6 relative z-10">
-        
-        <!-- Foto / Avatar Profil (LCP Element - Fully Optimized, Responsive WebP + JPEG Fallback with Exact Dimensions) -->
-        <div class="relative flex-shrink-0">
-          <div class="w-32 h-32 sm:w-36 sm:h-36 rounded-2xl overflow-hidden p-1 bg-gradient-to-tr from-emerald-500 via-cyan-500 to-indigo-500 shadow-lg shadow-emerald-500/20 avatar-wrapper">
-            <picture>
-              <source srcset="img/cv.webp" type="image/webp">
-              <img 
-                src="img/cv.jpeg" 
-                alt="Foto Profil Niko Amos Simanjuntak" 
-                width="144" 
-                height="144"
-                fetchpriority="high"
-                loading="eager"
-                decoding="async"
-                class="w-full h-full object-cover rounded-xl"
-                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=288&h=288&q=80';"
-              />
-            </picture>
-          </div>
-          <span class="absolute bottom-1 right-1 w-5 h-5 bg-emerald-500 border-2 border-slate-950 rounded-full flex items-center justify-center" title="Status: Aktif">
-            <span class="w-2 h-2 bg-white rounded-full animate-ping"></span>
-          </span>
+  <!-- ============ PENDIDIKAN ============ -->
+  <section class="py-8 border-b border-line">
+    <h2 class="text-xl font-semibold mb-4">Pendidikan</h2>
+    <div class="space-y-4">
+      <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+        <div>
+          <p class="font-medium">S1 Informatika</p>
+          <p class="text-muted text-sm">Universitas Teknologi Nusantara</p>
         </div>
-
-        <!-- Detail Identitas -->
-        <div class="flex-grow text-center md:text-left space-y-3">
-          <div class="flex flex-wrap items-center justify-center md:justify-start gap-2">
-            <h1 class="text-3xl sm:text-4xl font-bold font-['Space_Grotesk'] text-white tracking-tight">
-              Niko Amos Simanjuntak, S.Kom.
-            </h1>
-            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
-              Verified AI Specialist
-            </span>
-          </div>
-
-          <p class="text-emerald-400 font-medium text-lg sm:text-xl">
-            Lead AI Cyber Security Engineer &amp; Full-Stack Architect
-          </p>
-
-          <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
-            Praktisi rekayasa keamanan kecerdasan buatan dengan fokus pada mitigasi ancaman zero-day, sistem guardrails LLM enterprise, serta arsitektur web modern performa tinggi.
-          </p>
-
-          <!-- Kontak Baris Utility (Email, Telepon, Lokasi, GitHub, LinkedIn) -->
-          <div class="pt-2 flex flex-wrap items-center justify-center md:justify-start gap-3 sm:gap-4 text-xs sm:text-sm text-slate-300">
-            <a href="mailto:juntakk1704@gmail.com" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-800 hover:text-emerald-400 border border-slate-700/60 transition-colors">
-              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
-              <span>juntakk1704@gmail.com</span>
-            </a>
-
-            <a href="tel:+6281234567890" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-800 hover:text-emerald-400 border border-slate-700/60 transition-colors">
-              <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>
-              <span>+62 812-3456-7890</span>
-            </a>
-
-            <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-300">
-              <svg class="w-4 h-4 text-rose-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
-              <span>Jakarta Selatan, ID</span>
-            </span>
-
-            <a href="https://github.com/juntakk1704" target="_blank" rel="noreferrer" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-800 hover:text-white border border-slate-700/60 transition-colors">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-              <span>github/juntakk1704</span>
-            </a>
-
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-800 hover:text-cyan-400 border border-slate-700/60 transition-colors">
-              <svg class="w-4 h-4 text-cyan-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-              <span>linkedin/in/niko-simanjuntak</span>
-            </a>
-          </div>
-        </div>
-
+        <span class="text-sm text-muted">2023 — sekarang</span>
       </div>
-    </section>
-
-    <!-- =========================================================================
-         LAYOUT UTAMA 2 KOLOM (GRID RESPONSIVE 1 KOLOM MOBILE, 3 KOLOM DESKTOP)
-         ========================================================================= -->
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-      
-      <!-- =======================================================================
-           KOLOM KIRI (SIDEBAR INFO: ABOUT, PENDIDIKAN, KEAHLIAN CHIPS, SERTIFIKASI)
-           ======================================================================= -->
-      <aside class="space-y-8">
-        
-        <!-- Ringkasan Diri (About) -->
-        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-6 shadow-lg">
-          <h2 class="text-lg font-bold font-['Space_Grotesk'] text-white flex items-center gap-2 mb-3">
-            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
-            Tentang Saya
-          </h2>
-          <p class="text-slate-300 text-sm leading-relaxed">
-            Lulusan Teknik Informatika dengan dedikasi tinggi pada irisan antara rekayasa kecerdasan buatan (Machine Learning/LLM) dan pertahanan siber (Cyber Defense). Berpengalaman 3+ tahun merancang arsitektur model deteksi anomali jaringan, guardrails anti-jailbreak, serta membangun antarmuka web modern yang tangguh dan responsif.
-          </p>
+      <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+        <div>
+          <p class="font-medium">SMA Negeri 3 Bandung</p>
+          <p class="text-muted text-sm">Jurusan MIPA</p>
         </div>
-
-        <!-- Pendidikan -->
-        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-6 shadow-lg">
-          <h2 class="text-lg font-bold font-['Space_Grotesk'] text-white flex items-center gap-2 mb-4">
-            <svg class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342" /></svg>
-            Pendidikan
-          </h2>
-          <div class="space-y-4">
-            <div class="border-l-2 border-emerald-500/50 pl-4 py-1 space-y-1">
-              <span class="text-xs font-semibold text-emerald-400">2022 — 2026</span>
-              <h3 class="text-sm font-bold text-white">S1 Teknik Informatika</h3>
-              <p class="text-xs text-slate-400">Institut Teknologi Harapan Bangsa / Universitas Unggulan</p>
-              <p class="text-xs text-slate-300">IPK: <strong class="text-emerald-400 font-semibold">3.88 / 4.00</strong> (Cum Laude)</p>
-              <p class="text-xs text-slate-400 italic">Skripsi: "Deteksi Serangan Injeksi Prompt pada LLM Menggunakan Transformer dan Semantic Guardrails"</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Keahlian Teknis (Chips / Badges) -->
-        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-6 shadow-lg">
-          <h2 class="text-lg font-bold font-['Space_Grotesk'] text-white flex items-center gap-2 mb-4">
-            <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.67 2.67 0 0021 17.25l-5.83-5.83M11.42 15.17l2.496-3.03c.315-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.07a4.5 4.5 0 004.486-6.32l-3.27 3.27-2.956-2.956 3.27-3.27a4.5 4.5 0 00-6.32 4.486c.118.58.094 1.193-.07 1.743" /></svg>
-            Keahlian Teknis
-          </h2>
-          
-          <!-- Kelompok 1: Web & Frontend -->
-          <div class="space-y-2 mb-4">
-            <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-400">Web Engineering</h3>
-            <div class="flex flex-wrap gap-1.5">
-              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-800 text-slate-200 border border-slate-700 hover:border-emerald-500/40 transition-colors">HTML5 Semantik</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-800 text-slate-200 border border-slate-700 hover:border-emerald-500/40 transition-colors">Pure CSS (Flex & Grid)</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-800 text-emerald-300 border border-slate-700 hover:border-emerald-500/40 transition-colors">Tailwind CSS 4</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-800 text-cyan-300 border border-slate-700 hover:border-cyan-500/40 transition-colors">Bootstrap 5</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-800 text-slate-200 border border-slate-700 hover:border-emerald-500/40 transition-colors">TypeScript / JS</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-800 text-slate-200 border border-slate-700 hover:border-emerald-500/40 transition-colors">Vite / Node.js</span>
-            </div>
-          </div>
-
-          <!-- Kelompok 2: AI & ML -->
-          <div class="space-y-2 mb-4">
-            <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-400">AI &amp; Machine Learning</h3>
-            <div class="flex flex-wrap gap-1.5">
-              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-emerald-950/40 text-emerald-300 border border-emerald-800/40">Python</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-emerald-950/40 text-emerald-300 border border-emerald-800/40">PyTorch</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-emerald-950/40 text-emerald-300 border border-emerald-800/40">Transformers</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-emerald-950/40 text-emerald-300 border border-emerald-800/40">LangChain</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-emerald-950/40 text-emerald-300 border border-emerald-800/40">LLM Guardrails</span>
-            </div>
-          </div>
-
-          <!-- Kelompok 3: Cyber Security -->
-          <div class="space-y-2">
-            <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-400">Cyber Security &amp; Tools</h3>
-            <div class="flex flex-wrap gap-1.5">
-              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-cyan-950/40 text-cyan-300 border border-cyan-800/40">Autonomous SOC</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-cyan-950/40 text-cyan-300 border border-cyan-800/40">OWASP LLM Top 10</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-cyan-950/40 text-cyan-300 border border-cyan-800/40">Wireshark & Snort</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-cyan-950/40 text-cyan-300 border border-cyan-800/40">Git &amp; CI/CD</span>
-              <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-cyan-950/40 text-cyan-300 border border-cyan-800/40">Linux / Kali</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sertifikasi & Penghargaan -->
-        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-6 shadow-lg">
-          <h2 class="text-lg font-bold font-['Space_Grotesk'] text-white flex items-center gap-2 mb-4">
-            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.982-3.172M15 4.5a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-            Sertifikasi &amp; Prestasi
-          </h2>
-          <ul class="space-y-3 text-xs sm:text-sm">
-            <li class="flex items-start gap-2">
-              <span class="text-emerald-400 mt-0.5">✦</span>
-              <div>
-                <strong class="text-white block">CompTIA Security+ (SY0-701)</strong>
-                <span class="text-slate-400">CompTIA International (2025)</span>
-              </div>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-emerald-400 mt-0.5">✦</span>
-              <div>
-                <strong class="text-white block">Google Cloud Certified: ML Engineer</strong>
-                <span class="text-slate-400">Google Cloud (2025)</span>
-              </div>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-emerald-400 mt-0.5">✦</span>
-              <div>
-                <strong class="text-white block">Certified Ethical Hacker (CEH v12)</strong>
-                <span class="text-slate-400">EC-Council Practical (2024)</span>
-              </div>
-            </li>
-            <li class="flex items-start gap-2">
-              <span class="text-amber-400 mt-0.5">★</span>
-              <div>
-                <strong class="text-white block">Juara 1 Cyber Defense &amp; AI Hackathon</strong>
-                <span class="text-slate-400">Tingkat Nasional (2025)</span>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-      </aside>
-
-      <!-- =======================================================================
-           KOLOM KANAN (PENGALAMAN KERJA & PROYEK / PORTOFOLIO)
-           ======================================================================= -->
-      <section class="lg:col-span-2 space-y-8">
-
-        <!-- Pengalaman Kerja & Organisasi (Minimal 2 Item) -->
-        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-6 sm:p-8 shadow-lg">
-          <h2 class="text-xl font-bold font-['Space_Grotesk'] text-white flex items-center gap-2.5 mb-6 pb-3 border-b border-slate-800">
-            <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0" /></svg>
-            Pengalaman Profesional &amp; Riset
-          </h2>
-
-          <div class="space-y-8">
-            
-            <!-- Pengalaman 1 -->
-            <div class="relative pl-6 border-l-2 border-emerald-500/60 group">
-              <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-950 border-2 border-emerald-400 group-hover:bg-emerald-400 transition-colors"></div>
-              <div class="flex flex-wrap items-center justify-between gap-1 mb-1">
-                <h3 class="text-base sm:text-lg font-bold text-white">Lead AI Security Specialist</h3>
-                <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
-                  Jan 2025 — Sekarang
-                </span>
-              </div>
-              <p class="text-sm font-medium text-cyan-400 mb-2">Asphaleia AI Security Lab • Penuh Waktu</p>
-              <ul class="list-disc list-inside text-sm text-slate-300 space-y-1.5 leading-relaxed">
-                <li>Memimpin perancangan pipeline model klasifikasi semantik untuk deteksi prompt injection pada 120+ endpoint enterprise.</li>
-                <li>Mengembangkan arsitektur Autonomous SOC engine yang sukses mereduksi Mean Time to Detect (MTTD) hingga 80%.</li>
-                <li>Mengimplementasikan layer sanitasi token berbasis edge proxy dengan rata-rata latensi di bawah 15ms.</li>
-              </ul>
-            </div>
-
-            <!-- Pengalaman 2 -->
-            <div class="relative pl-6 border-l-2 border-slate-700 group">
-              <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-950 border-2 border-slate-600 group-hover:border-cyan-400 transition-colors"></div>
-              <div class="flex flex-wrap items-center justify-between gap-1 mb-1">
-                <h3 class="text-base sm:text-lg font-bold text-white">Cyber Defense &amp; AI Research Intern</h3>
-                <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300">
-                  Jul 2024 — Des 2024
-                </span>
-              </div>
-              <p class="text-sm font-medium text-slate-400 mb-2">Lembaga Riset Ketahanan Siber Nasional • Magang</p>
-              <ul class="list-disc list-inside text-sm text-slate-300 space-y-1.5 leading-relaxed">
-                <li>Melakukan simulasi adversarial attacks (jailbreak, backdoor injections) pada model fondasi open-source.</li>
-                <li>Membangun dashboard analisis telemetri intrusi jaringan real-time menggunakan Python dan web stack.</li>
-                <li>Menyusun laporan teknis pemenuhan standar regulasi UU Perlindungan Data Pribadi (UU PDP).</li>
-              </ul>
-            </div>
-
-            <!-- Pengalaman 3 -->
-            <div class="relative pl-6 border-l-2 border-slate-700 group">
-              <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-950 border-2 border-slate-600 group-hover:border-indigo-400 transition-colors"></div>
-              <div class="flex flex-wrap items-center justify-between gap-1 mb-1">
-                <h3 class="text-base sm:text-lg font-bold text-white">Ketua Divisi Riset Cyber &amp; Artificial Intelligence</h3>
-                <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300">
-                  Sep 2023 — Jun 2024
-                </span>
-              </div>
-              <p class="text-sm font-medium text-slate-400 mb-2">Himpunan Mahasiswa Informatika • Organisasi Kampus</p>
-              <ul class="list-disc list-inside text-sm text-slate-300 space-y-1.5 leading-relaxed">
-                <li>Menginisiasi 8 sesi boot-camp CTF (Capture the Flag) dan machine learning security bagi 150+ mahasiswa.</li>
-                <li>Mengkoordinasikan tim delegasi kampus meraih posisi 3 besar pada kompetisi CTF tingkat regional.</li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Proyek / Portofolio Singkat (Minimal 2 Proyek, Menautkan ke Landing Page & Blog) -->
-        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-6 sm:p-8 shadow-lg">
-          <div class="flex items-center justify-between mb-6 pb-3 border-b border-slate-800">
-            <h2 class="text-xl font-bold font-['Space_Grotesk'] text-white flex items-center gap-2.5">
-              <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" /></svg>
-              Portofolio &amp; Proyek Unggulan
-            </h2>
-            <span class="text-xs text-slate-400">Terhubung dalam Proyek Ini</span>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-            
-            <!-- Proyek 1: Landing Page Asphaleia AI -->
-            <div class="bg-slate-950/80 border border-slate-800 hover:border-emerald-500/50 rounded-xl p-5 flex flex-col justify-between transition-all group">
-              <div>
-                <div class="flex items-center justify-between mb-2">
-                  <span class="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                    Studi Kasus 3.1 (Pure CSS)
-                  </span>
-                  <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-400 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
-                </div>
-                <h3 class="text-base font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors">
-                  Asphaleia AI Corporate Landing Page
-                </h3>
-                <p class="text-xs text-slate-300 mb-4 leading-relaxed">
-                  Landing page profesional perusahaan jasa AI Cyber Security yang dibangun menggunakan Semantic HTML5 murni dan CSS eksternal (CSS Grid, Flexbox, media query) tanpa framework.
-                </p>
-                <div class="flex flex-wrap gap-1 mb-4">
-                  <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">Semantic HTML5</span>
-                  <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">CSS Variables</span>
-                  <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">CSS Grid</span>
-                </div>
-              </div>
-              <a href="index.html" class="inline-flex items-center gap-1 text-xs font-semibold text-emerald-400 hover:underline">
-                <span>Buka Landing Page (index.html)</span>
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
-              </a>
-            </div>
-
-            <!-- Proyek 2: Blog Portal & Detail -->
-            <div class="bg-slate-950/80 border border-slate-800 hover:border-cyan-500/50 rounded-xl p-5 flex flex-col justify-between transition-all group">
-              <div>
-                <div class="flex items-center justify-between mb-2">
-                  <span class="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
-                    Studi Kasus 3.2 (Bootstrap 5)
-                  </span>
-                  <svg class="w-4 h-4 text-slate-400 group-hover:text-cyan-400 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" /></svg>
-                </div>
-                <h3 class="text-base font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors">
-                  AI Cyber Knowledge Hub &amp; Detail Blog
-                </h3>
-                <p class="text-xs text-slate-300 mb-4 leading-relaxed">
-                  Platform publikasi riset keamanan LLM dan tata kelola AI menggunakan Bootstrap 5 dan Bootstrap Icons, dilengkapi daftar artikel interaktif dan halaman baca komprehensif.
-                </p>
-                <div class="flex flex-wrap gap-1 mb-4">
-                  <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">Bootstrap 5.3</span>
-                  <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">Bootstrap Icons</span>
-                  <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">Card &amp; Modal</span>
-                </div>
-              </div>
-              <a href="blog.html" class="inline-flex items-center gap-1 text-xs font-semibold text-cyan-400 hover:underline">
-                <span>Buka Blog AI (blog.html)</span>
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
-              </a>
-            </div>
-
-            <!-- Proyek 3: Autonomous Threat Detection Engine -->
-            <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-5 flex flex-col justify-between col-span-1 md:col-span-2">
-              <div>
-                <div class="flex items-center justify-between mb-2">
-                  <span class="text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20">
-                    Proyek Riset Terbuka
-                  </span>
-                  <span class="text-xs text-slate-400">Python • PyTorch • FastEmbed</span>
-                </div>
-                <h3 class="text-base font-bold text-white mb-2">
-                  Autonomous Semantic Firewall for LLMs (Guardrail AI Proxy)
-                </h3>
-                <p class="text-xs text-slate-300 mb-3 leading-relaxed">
-                  Sistem reverse-proxy inferensi cerdas untuk menyaring serangan Indirect Prompt Injection dan Denial of Service (ReDoS) pada aplikasi enterprise AI. Mengklasifikasikan embedding vektor intent pengguna dalam latensi 12ms.
-                </p>
-              </div>
-              <div class="flex items-center gap-3 pt-2 border-t border-slate-800/80">
-                <span class="text-xs text-slate-400">Status: <strong class="text-emerald-400">Aktif Digunakan di Asphaleia AI</strong></span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </section>
-
-    </div>
-  </main>
-
-  <!-- =========================================================================
-       FOOTER CV (TAILWIND CSS 4)
-       ========================================================================= -->
-  <footer class="mt-auto border-t border-slate-800/80 bg-slate-950 py-8 px-4 text-center">
-    <div class="max-w-6xl mx-auto space-y-3">
-      <div class="flex items-center justify-center gap-2">
-        <span class="w-6 h-6 rounded bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xs">A</span>
-        <span class="font-['Space_Grotesk'] font-bold text-white">Asphaleia<span class="text-emerald-400">.AI</span></span>
-      </div>
-      <p class="text-xs text-slate-400">
-        &copy; 2026 Niko Amos Simanjuntak • Tugas Praktikum PABWE P2 (<code class="text-cyan-400 font-mono">ifs24041-pabwe-p2</code>).
-      </p>
-      <div class="flex items-center justify-center gap-4 text-xs text-slate-400">
-        <a href="index.html" class="hover:text-emerald-400 transition-colors">Landing Page (Pure CSS)</a>
-        <span>•</span>
-        <a href="blog.html" class="hover:text-cyan-400 transition-colors">Daftar Blog (Bootstrap 5)</a>
-        <span>•</span>
-        <a href="blog-detail.html" class="hover:text-cyan-400 transition-colors">Detail Blog</a>
-        <span>•</span>
-        <a href="cv.html" class="text-emerald-400 font-semibold">CV (Tailwind 4)</a>
+        <span class="text-sm text-muted">2020 — 2023</span>
       </div>
     </div>
-  </footer>
+  </section>
+
+  <!-- ============ PENGALAMAN ============ -->
+  <section class="py-8 border-b border-line">
+    <h2 class="text-xl font-semibold mb-4">Pengalaman</h2>
+    <div class="space-y-6">
+      <div>
+        <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+          <p class="font-medium">Magang Cybersecurity Analyst — Asphaleia AI</p>
+          <span class="text-sm text-muted">Jun 2026 — Agu 2026</span>
+        </div>
+        <ul class="list-disc list-inside text-muted text-sm mt-2 space-y-1">
+          <li>Membantu menganalisis log anomali dari sistem deteksi ancaman berbasis AI.</li>
+          <li>Menyusun dokumentasi playbook respons insiden untuk tim SOC.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
+          <p class="font-medium">Anggota Divisi Teknis — Himpunan Mahasiswa Informatika</p>
+          <span class="text-sm text-muted">2024 — 2025</span>
+        </div>
+        <ul class="list-disc list-inside text-muted text-sm mt-2 space-y-1">
+          <li>Mengelola dan mengamankan server internal organisasi.</li>
+          <li>Mengadakan workshop pengenalan keamanan siber untuk mahasiswa baru.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KEAHLIAN ============ -->
+  <section class="py-8 border-b border-line">
+    <h2 class="text-xl font-semibold mb-4">Keahlian</h2>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 rounded-full text-sm border border-line bg-panel text-slate-200">HTML &amp; CSS</span>
+      <span class="px-3 py-1 rounded-full text-sm border border-line bg-panel text-slate-200">Bootstrap 5</span>
+      <span class="px-3 py-1 rounded-full text-sm border border-line bg-panel text-slate-200">Tailwind CSS</span>
+      <span class="px-3 py-1 rounded-full text-sm border border-line bg-panel text-slate-200">Python</span>
+      <span class="px-3 py-1 rounded-full text-sm border border-line bg-panel text-slate-200">Jaringan &amp; Keamanan Dasar</span>
+      <span class="px-3 py-1 rounded-full text-sm border border-line bg-panel text-slate-200">Git</span>
+    </div>
+  </section>
+
+  <!-- ============ SERTIFIKAT ============ -->
+  <section class="py-8 border-b border-line">
+    <h2 class="text-xl font-semibold mb-4">Sertifikat &amp; Penghargaan</h2>
+    <ul class="space-y-2 text-muted text-sm">
+      <li class="flex justify-between"><span>Introduction to Cybersecurity — Cisco Networking Academy</span><span>2025</span></li>
+      <li class="flex justify-between"><span>Juara 2, Capture The Flag Tingkat Universitas</span><span>2025</span></li>
+    </ul>
+  </section>
+
+  <!-- ============ PROYEK ============ -->
+  <section class="py-8">
+    <h2 class="text-xl font-semibold mb-4">Proyek</h2>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <a href="index.html" class="block p-4 rounded-lg border border-line bg-panel hover:border-signal transition">
+        <p class="font-medium">Asphaleia AI — Landing Page</p>
+        <p class="text-muted text-sm mt-1">Landing page perusahaan jasa AI cybersecurity, dibangun dengan HTML &amp; CSS murni.</p>
+      </a>
+      <a href="blog.html" class="block p-4 rounded-lg border border-line bg-panel hover:border-signal transition">
+        <p class="font-medium">Asphaleia Blog</p>
+        <p class="text-muted text-sm mt-1">Platform blog seputar AI &amp; keamanan siber, dibangun dengan Bootstrap 5.</p>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="border-t border-line py-6">
+  <div class="max-w-3xl mx-auto px-5 text-sm text-muted flex flex-wrap justify-between gap-2">
+    <span>© 2026 Ilham Nugraha</span>
+    <a href="index.html" class="hover:text-signal transition">Kembali ke Asphaleia AI</a>
+  </div>
+</footer>
 
 </body>
 </html>
