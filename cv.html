@@ -5,6 +5,8 @@
   <title>CV | Asphaleia AI</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style>
+    a { text-decoration: underline; text-underline-offset: 3px; }
+    header a, .bg-ink a { text-decoration: none; }
     @theme { --color-asphaleia: #18b9aa; --color-ink: #102238; --color-mist: #f5f8fc; }
   </style>
 </head>
@@ -13,7 +15,7 @@
   <header class="bg-ink text-white sticky top-0 z-10 shadow-lg">
     <nav class="max-w-6xl mx-auto px-5 py-4 flex flex-wrap items-center justify-between gap-4">
       <a href="index.html" class="font-extrabold text-lg tracking-tight"><span class="text-asphaleia">A</span> Asphaleia AI</a>
-      <div class="flex gap-4 text-sm text-slate-300">
+      <div class="flex gap-4 text-sm text-slate-200">
         <a class="hover:text-asphaleia transition" href="index.html">Beranda</a>
         <a class="hover:text-asphaleia transition" href="blog.html">Blog</a>
         <a class="text-asphaleia font-semibold" href="cv.html">CV</a>
@@ -29,8 +31,8 @@
           <div class="flex-1">
             <p class="uppercase tracking-[.18em] text-xs text-asphaleia font-bold">Curriculum Vitae</p>
             <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mt-1">Amos Juntak</h1>
-            <p class="text-lg text-slate-300 mt-2">Aspiring AI & Cyber Security Engineer</p>
-            <div class="flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-400 mt-4">
+            <p class="text-lg text-slate-200 mt-2">Aspiring AI & Cyber Security Engineer</p>
+            <div class="flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-200 mt-4">
               <span>✉ email@example.com</span><span>⌕ +62 8xx xxxx xxxx</span><span>⌖ Indonesia</span>
               <a class="hover:text-asphaleia" href="#">GitHub</a><a class="hover:text-asphaleia" href="#">LinkedIn</a>
             </div>
@@ -89,7 +91,7 @@
     </section>
   </main>
 
-  <footer class="max-w-6xl mx-auto px-5 pb-10 text-sm text-slate-500 flex flex-wrap justify-between gap-3">
+  <footer class="max-w-6xl mx-auto px-5 pb-10 text-sm text-slate-600 flex flex-wrap justify-between gap-3">
     <span>Asphaleia AI — AI & Cyber Security</span><span>© 2026</span>
   </footer>
 </body>
