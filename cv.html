@@ -1,74 +1,93 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV — Ilham Nugraha | Asphaleia AI</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Ilham Nugraha | Asphaleia AI</title>
+  <meta name="description" content="Curriculum Vitae Ilham Nugraha - Aspiring AI Security Engineer.">
 
-<!-- Tailwind CSS 4 (Play CDN, untuk keperluan praktikum) -->
-<script src="https://cdn.tailwindcss.com/@tailwindcss/browser@4"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS v4 Browser CDN -->
+  <script src="https://cdn.tailwindcss.com/@tailwindcss/browser@4"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons (agar seragam dengan halaman lain) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-<style type="text/tailwindcss">
-  @theme {
-    --color-ink: #0B1220;
-    --color-panel: #121B2E;
-    --color-line: #26344E;
-    --color-signal: #3FD6C0;
-    --color-alert: #F5A93F;
-    --color-muted: #8CA0B8;
-    --font-display: 'Space Grotesk', sans-serif;
-    --font-body: 'Inter', sans-serif;
-  }
-  body { font-family: var(--font-body); }
-  h1, h2, .brand { font-family: var(--font-display); }
-</style>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-ink: #0B1220;
+      --color-panel: #121B2E;
+      --color-line: #26344E;
+      --color-signal: #3FD6C0;
+      --color-alert: #F5A93F;
+      --color-muted: #8CA0B8;
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    body { 
+      font-family: var(--font-body); 
+      background-color: var(--color-ink);
+      color: #EAF1F5;
+    }
+    
+    h1, h2, h3, .brand { 
+      font-family: var(--font-display); 
+    }
+  </style>
 </head>
-<body class="bg-ink text-slate-100">
+<body class="min-h-screen flex flex-col justify-between">
 
 <!-- ============ NAVBAR ============ -->
-<nav class="sticky top-0 z-50 bg-ink/90 backdrop-blur border-b border-line">
+<header class="sticky top-0 z-50 bg-ink/90 backdrop-blur border-b border-line">
   <div class="max-w-5xl mx-auto px-5 py-3 flex items-center justify-between">
-    <a href="index.html" class="brand flex items-center gap-2 font-bold text-lg">
+    <a href="index.html" class="brand flex items-center gap-2 font-bold text-lg text-white">
       <span class="w-8 h-8 rounded-md bg-gradient-to-br from-signal to-teal-600 flex items-center justify-center text-ink font-bold">A</span>
       Asphaleia AI
     </a>
-    <div class="hidden sm:flex items-center gap-6 text-sm text-muted">
-      <a href="index.html" class="hover:text-signal transition">Beranda</a>
-      <a href="blog.html" class="hover:text-signal transition">Blog</a>
-      <a href="cv.html" class="text-signal">CV</a>
-    </div>
+    <nav class="flex items-center gap-6 text-sm">
+      <a href="index.html" class="text-muted hover:text-signal transition-colors">Beranda</a>
+      <a href="blog.html" class="text-muted hover:text-signal transition-colors">Blog</a>
+      <a href="cv.html" class="text-signal font-semibold">CV</a>
+    </nav>
   </div>
-</nav>
+</header>
 
-<main class="max-w-3xl mx-auto px-5 py-10 sm:py-14">
+<main class="max-w-3xl mx-auto px-5 py-10 sm:py-14 w-full flex-grow">
 
   <!-- ============ HEADER PROFIL ============ -->
   <header class="flex flex-col sm:flex-row items-start sm:items-center gap-6 pb-8 border-b border-line">
     <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&crop=faces"
          alt="Foto profil Ilham Nugraha"
-         class="w-28 h-28 rounded-xl object-cover border border-line">
+         class="w-28 h-28 rounded-xl object-cover border border-line shrink-0">
     <div>
-      <h1 class="text-3xl font-bold">Ilham Nugraha</h1>
+      <h1 class="text-3xl font-bold text-white">Ilham Nugraha</h1>
       <p class="text-signal font-medium mt-1">Aspiring AI Security Engineer</p>
+      
       <div class="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-sm text-muted">
-        <span>ilham.nugraha@mail.com</span>
-        <span>+62 812-3456-7890</span>
-        <span>Bandung, Indonesia</span>
+        <span class="flex items-center gap-1.5"><i class="bi bi-envelope text-signal"></i> ilham.nugraha@mail.com</span>
+        <span class="flex items-center gap-1.5"><i class="bi bi-telephone text-signal"></i> +62 812-3456-7890</span>
+        <span class="flex items-center gap-1.5"><i class="bi bi-geo-alt text-signal"></i> Bandung, Indonesia</span>
       </div>
-      <div class="flex gap-4 mt-2 text-sm">
-        <a href="#" class="text-muted hover:text-signal transition">github.com/ilhamnugraha</a>
-        <a href="#" class="text-muted hover:text-signal transition">linkedin.com/in/ilhamnugraha</a>
+      
+      <div class="flex gap-4 mt-3 text-sm">
+        <a href="https://github.com" target="_blank" class="text-muted hover:text-signal transition-colors flex items-center gap-1">
+          <i class="bi bi-github"></i> github.com/ilhamnugraha
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="text-muted hover:text-signal transition-colors flex items-center gap-1">
+          <i class="bi bi-linkedin"></i> linkedin.com/in/ilhamnugraha
+        </a>
       </div>
     </div>
   </header>
 
   <!-- ============ RINGKASAN ============ -->
   <section class="py-8 border-b border-line">
-    <h2 class="text-xl font-semibold mb-3">Tentang Saya</h2>
+    <h2 class="text-xl font-semibold mb-3 text-white">Tentang Saya</h2>
     <p class="text-muted leading-relaxed">
       Mahasiswa Informatika dengan minat pada keamanan siber dan penerapan kecerdasan buatan untuk deteksi ancaman.
-      Berpengalaman membangun antarmuka web serta bereksperimen dengan model machine learning sederhana untuk
+      Berpengalaman membangun antarmuka web serta bereksperimen dengan model <em>machine learning</em> sederhana untuk
       klasifikasi anomali jaringan. Tertarik berkontribusi pada tim yang menggabungkan riset AI dengan praktik
       keamanan aplikasi.
     </p>
@@ -76,18 +95,18 @@
 
   <!-- ============ PENDIDIKAN ============ -->
   <section class="py-8 border-b border-line">
-    <h2 class="text-xl font-semibold mb-4">Pendidikan</h2>
+    <h2 class="text-xl font-semibold mb-4 text-white">Pendidikan</h2>
     <div class="space-y-4">
       <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
         <div>
-          <p class="font-medium">S1 Informatika</p>
+          <p class="font-medium text-slate-100">S1 Informatika</p>
           <p class="text-muted text-sm">Universitas Teknologi Nusantara</p>
         </div>
         <span class="text-sm text-muted">2023 — sekarang</span>
       </div>
       <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
         <div>
-          <p class="font-medium">SMA Negeri 3 Bandung</p>
+          <p class="font-medium text-slate-100">SMA Negeri 3 Bandung</p>
           <p class="text-muted text-sm">Jurusan MIPA</p>
         </div>
         <span class="text-sm text-muted">2020 — 2023</span>
@@ -97,11 +116,11 @@
 
   <!-- ============ PENGALAMAN ============ -->
   <section class="py-8 border-b border-line">
-    <h2 class="text-xl font-semibold mb-4">Pengalaman</h2>
+    <h2 class="text-xl font-semibold mb-4 text-white">Pengalaman</h2>
     <div class="space-y-6">
       <div>
         <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
-          <p class="font-medium">Magang Cybersecurity Analyst — Asphaleia AI</p>
+          <p class="font-medium text-slate-100">Magang Cybersecurity Analyst — Asphaleia AI</p>
           <span class="text-sm text-muted">Jun 2026 — Agu 2026</span>
         </div>
         <ul class="list-disc list-inside text-muted text-sm mt-2 space-y-1">
@@ -111,7 +130,7 @@
       </div>
       <div>
         <div class="flex flex-col sm:flex-row sm:justify-between gap-1">
-          <p class="font-medium">Anggota Divisi Teknis — Himpunan Mahasiswa Informatika</p>
+          <p class="font-medium text-slate-100">Anggota Divisi Teknis — Himpunan Mahasiswa Informatika</p>
           <span class="text-sm text-muted">2024 — 2025</span>
         </div>
         <ul class="list-disc list-inside text-muted text-sm mt-2 space-y-1">
@@ -124,7 +143,7 @@
 
   <!-- ============ KEAHLIAN ============ -->
   <section class="py-8 border-b border-line">
-    <h2 class="text-xl font-semibold mb-4">Keahlian</h2>
+    <h2 class="text-xl font-semibold mb-4 text-white">Keahlian</h2>
     <div class="flex flex-wrap gap-2">
       <span class="px-3 py-1 rounded-full text-sm border border-line bg-panel text-slate-200">HTML &amp; CSS</span>
       <span class="px-3 py-1 rounded-full text-sm border border-line bg-panel text-slate-200">Bootstrap 5</span>
@@ -137,23 +156,35 @@
 
   <!-- ============ SERTIFIKAT ============ -->
   <section class="py-8 border-b border-line">
-    <h2 class="text-xl font-semibold mb-4">Sertifikat &amp; Penghargaan</h2>
+    <h2 class="text-xl font-semibold mb-4 text-white">Sertifikat &amp; Penghargaan</h2>
     <ul class="space-y-2 text-muted text-sm">
-      <li class="flex justify-between"><span>Introduction to Cybersecurity — Cisco Networking Academy</span><span>2025</span></li>
-      <li class="flex justify-between"><span>Juara 2, Capture The Flag Tingkat Universitas</span><span>2025</span></li>
+      <li class="flex justify-between items-center">
+        <span>Introduction to Cybersecurity — Cisco Networking Academy</span>
+        <span class="text-xs border border-line px-2 py-0.5 rounded bg-panel">2025</span>
+      </li>
+      <li class="flex justify-between items-center">
+        <span>Juara 2, Capture The Flag Tingkat Universitas</span>
+        <span class="text-xs border border-line px-2 py-0.5 rounded bg-panel">2025</span>
+      </li>
     </ul>
   </section>
 
   <!-- ============ PROYEK ============ -->
   <section class="py-8">
-    <h2 class="text-xl font-semibold mb-4">Proyek</h2>
+    <h2 class="text-xl font-semibold mb-4 text-white">Proyek</h2>
     <div class="grid sm:grid-cols-2 gap-4">
-      <a href="index.html" class="block p-4 rounded-lg border border-line bg-panel hover:border-signal transition">
-        <p class="font-medium">Asphaleia AI — Landing Page</p>
+      <a href="index.html" class="block p-4 rounded-lg border border-line bg-panel hover:border-signal transition-colors group">
+        <p class="font-medium text-slate-100 group-hover:text-signal transition-colors flex items-center justify-between">
+          Asphaleia AI — Landing Page
+          <i class="bi bi-arrow-up-right text-xs"></i>
+        </p>
         <p class="text-muted text-sm mt-1">Landing page perusahaan jasa AI cybersecurity, dibangun dengan HTML &amp; CSS murni.</p>
       </a>
-      <a href="blog.html" class="block p-4 rounded-lg border border-line bg-panel hover:border-signal transition">
-        <p class="font-medium">Asphaleia Blog</p>
+      <a href="blog.html" class="block p-4 rounded-lg border border-line bg-panel hover:border-signal transition-colors group">
+        <p class="font-medium text-slate-100 group-hover:text-signal transition-colors flex items-center justify-between">
+          Asphaleia Blog
+          <i class="bi bi-arrow-up-right text-xs"></i>
+        </p>
         <p class="text-muted text-sm mt-1">Platform blog seputar AI &amp; keamanan siber, dibangun dengan Bootstrap 5.</p>
       </a>
     </div>
@@ -161,10 +192,13 @@
 
 </main>
 
-<footer class="border-t border-line py-6">
-  <div class="max-w-3xl mx-auto px-5 text-sm text-muted flex flex-wrap justify-between gap-2">
-    <span>© 2026 Ilham Nugraha</span>
-    <a href="index.html" class="hover:text-signal transition">Kembali ke Asphaleia AI</a>
+<!-- ============ FOOTER ============ -->
+<footer class="border-t border-line py-6 bg-ink">
+  <div class="max-w-3xl mx-auto px-5 text-sm text-muted flex flex-wrap justify-between items-center gap-2">
+    <span>© 2026 Ilham Nugraha. Seluruh hak dilindungi.</span>
+    <a href="index.html" class="hover:text-signal transition-colors flex items-center gap-1">
+      <i class="bi bi-arrow-left"></i> Kembali ke Asphaleia AI
+    </a>
   </div>
 </footer>
 
