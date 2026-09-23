@@ -108,7 +108,17 @@ h1 span { color: #4fe0d2; }
 .footer-inner strong { color: var(--text); display: block; }
 .footer-inner span { font-size: .7rem; }
 .footer-links { display: flex; gap: 18px; }
-.footer-links a:hover { color: #39d5c5; }
+
+/* PERBAIKAN: Menambahkan garis bawah agar tautan footer dapat dibedakan tanpa hanya bergantung pada warna */
+.footer-link {
+  color: #ffffff !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: #39d5c5 !important;
+}
 
 @media (max-width: 900px) { .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }.service-grid { grid-template-columns: repeat(2, 1fr); }.hero-panel { min-height: 350px; }.hero { padding-top: 70px; } }
 @media (max-width: 650px) { .nav-links { gap: 10px; font-size: .75rem; }.nav-links a:nth-child(-n+3) { display: none; }.service-grid { grid-template-columns: 1fr; }.section { padding: 70px 0; }.footer-inner { flex-direction: column; align-items: flex-start; }.hero-stats { gap: 20px; }.panel-tag { display: none; } }
